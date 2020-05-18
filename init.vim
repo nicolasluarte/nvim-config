@@ -3,6 +3,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 source $HOME/.config/nvim/plug-config/general.vim
 source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/plug-config/repl.vim
+source $HOME/.config/nvim/plug-config/languagetool.vim
+source $HOME/.config/nvim/plug-config/fzf-bibtex.vim
+source $HOME/.config/nvim/plug-config/pandoc.vim
 "
 " python IDE
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -25,11 +28,20 @@ let R_assign_map = "--"
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 let R_show_args = 1
-autocmd FileType r inoremap <buffer> <C-P> <Esc>:normal! a %>%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
-autocmd FileType rmd inoremap <buffer> > <Esc>:normal! a %>%<CR>a
-
-" Initialize plugin system
+autocmd FileType r inoremap <buffer> <C-S-P> <Esc>:normal! a %>%<CR>a 
+" HTML
+Plug 'mattn/emmet-vim'
+"
+" Markdown
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vigoux/LanguageTool.nvim'
+Plug 'thalesmello/tabfold'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
+"
+"Plug 'mattn/emmet-vim'u" Initialize plugin system
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
