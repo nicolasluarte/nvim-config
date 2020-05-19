@@ -45,6 +45,8 @@ Plug 'tpope/vim-surround'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
