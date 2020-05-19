@@ -39,9 +39,13 @@ Plug 'vigoux/LanguageTool.nvim'
 Plug 'thalesmello/tabfold'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-surround'
 "
-"Plug 'mattn/emmet-vim'u" Initialize plugin system
+" Vim
+Plug 'tpope/vim-surround'
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1

@@ -1,5 +1,5 @@
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 map <leader>nn :NERDTreeToggle<CR>
@@ -14,6 +14,8 @@ noremap <leader>6 6gt
 noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
+nmap <leader>f :Files<Enter>
+nmap <leader>r :OverCommandLine<Enter>
 set backspace=indent,eol,start
 set ma
 set number
@@ -39,3 +41,5 @@ nnoremap <C-H> <C-W>h
 let g:python3_host_prog='/home/nicoluarte/anaconda3/bin/python3'
 let g:loaded_python_provider=0
 :tnoremap <Esc> <C-\><C-n>
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd vimenter * colorscheme gruvbox
