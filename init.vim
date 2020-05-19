@@ -47,6 +47,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'tpope/vim-commentary'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
