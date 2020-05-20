@@ -5,8 +5,6 @@ let g:rnvimr_ex_enable = 1
 "
 " Mappings
 "
-noremap <leader>nt :tabnew<cr>
-noremap <leader>no :tabonly<cr>
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
