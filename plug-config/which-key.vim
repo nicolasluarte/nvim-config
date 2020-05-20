@@ -1,32 +1,36 @@
-let g:which_key_map = {}
 set timeoutlen=500
 autocmd VimEnter * call which_key#register('<Space>', "g:which_key_map")
-nnoremap <buffer> <Space> :WhichKey! g:my_dict<CR>
-vnoremap <buffer> <Space> :WhichKeyVisual '<Space>'<CR>
-
-let g:which_key_map.1 = 'which_key_ignore'
-let g:which_key_map.2 = 'which_key_ignore'
-let g:which_key_map.3 = 'which_key_ignore'
-let g:which_key_map.4 = 'which_key_ignore'
-let g:which_key_map.5 = 'which_key_ignore'
-let g:which_key_map.c = 'which_key_ignore'
-let g:which_key_map.f = 'which_key_ignore'
-let g:which_key_map.r = 'which_key_ignore'
-let g:which_key_map.m = 'which_key_ignore'
-let g:which_key_map.n = 'which_key_ignore'
+nnoremap , :<C-U>WhichKey! g:my_dict<Enter><Enter>
+vnoremap , :<C-U>WhichKey! g:my_dict<Enter><Enter>
+let g:which_key_hspace=2
+let g:which_key_vertical=1
+let g:which_key_use_floating_win = 1
 
 let g:my_dict = {
       \ 'name' : '+general' ,
-      \ 't' : {
+      \}
+
+let g:my_dict.t = {
       \ 'name' : '+tabs',
       \ 't' : ['tabnew'        , 'new tab']        ,
       \ 'x' : ['tabonly'        , 'close other tabs']        ,
-      \}
-      \}
+      \ }
 
-let g:which_key_map.n = {
-      \ 'name' : '+tabs' ,
-      \ 't' : ['tabnew'        , 'new tab']        ,
-      \ 'x' : ['tabonly'        , 'close other tabs']        ,
+let g:my_dict.f = {
+      \ 'name' : '+file_navigation',
+      \ 'r' : ['RnvimrToggle'        , 'ranger']        ,
+      \ 'f' : ['Files'        , 'fuzzy file finder']        ,
+      \ }
+
+let g:my_dict.c = {
+      \ 'name' : '+code_related',
+      \ 'c' : ['Commentary'        , 'comment']        ,
+      \ 'f' : ['Files'        , 'fuzzy file finder']        ,
+      \ }
+
+let g:my_dict.p = {
+      \ 'name' : '+REPL',
+      \ '1' : ['<Plug>RStart'        , 'Start R REPL']        ,
+      \ '2' : ['<Plug>(ripple_open_repl)'        , 'Start Python REPL']        ,
       \ }
 

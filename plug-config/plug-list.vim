@@ -1,4 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
+" Code
+Plug 'sbdchd/neoformat'
 " python IDE
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-jedi'
@@ -13,7 +15,6 @@ Plug 'roxma/nvim-yarp'
 Plug 'gaalcaras/ncm-R'
 Plug 'preservim/nerdtree'
 Plug 'Raimondi/delimitMate'
-Plug 'patstockwell/vim-monokai-tasty'
 Plug 'itchyny/lightline.vim'
 let R_assign_map = "--"
 vmap <Space> <Plug>RDSendSelection

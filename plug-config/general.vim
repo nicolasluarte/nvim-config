@@ -10,8 +10,10 @@ noremap <leader>2 2gt
 noremap <leader>3 3gt
 noremap <leader>4 4gt
 noremap <leader>5 5gt
-nnoremap <TAB> gt
-nnoremap <S-TAB> gT
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
 nmap <leader>f :Files<Enter>
 inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
@@ -21,8 +23,8 @@ nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 :tnoremap <Esc> <C-\><C-n>
 nmap <space>r :RnvimrToggle<CR>
-nnoremap <space>/ :Commentary<CR>
-vnoremap <space>/ :Commentary<CR>
+nnoremap <space>_ :Commentary<CR>
+vnoremap <space>_ :Commentary<CR>
 
 "
 " Set commands
@@ -51,5 +53,5 @@ set clipboard=unnamedplus
 " Autocmd
 "
 autocmd BufEnter * call ncm2#enable_for_buffer()
-autocmd FileType * setlocal formatoptions-=cro
+autocmd FileType * set formatoptions-=cro
 autocmd vimenter * colorscheme gruvbox
