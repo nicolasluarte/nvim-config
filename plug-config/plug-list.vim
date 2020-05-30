@@ -17,8 +17,6 @@ Plug 'preservim/nerdtree'
 Plug 'Raimondi/delimitMate'
 Plug 'itchyny/lightline.vim'
 let R_assign_map = "--"
-vmap <Space> <Plug>RDSendSelection
-nmap <Space> <Plug>RDSendLine
 let R_show_args = 1
 autocmd FileType r inoremap <buffer> <C-S-P> <Esc>:normal! a %>%<CR>a 
 " HTML

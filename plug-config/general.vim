@@ -1,5 +1,5 @@
 let mapleader = " "
-let g:python3_host_prog='/home/nicoluarte/anaconda3/bin/python3'
+let g:python3_host_prog='/bin/python3'
 let g:loaded_python_provider=0
 let g:rnvimr_ex_enable = 1
 "

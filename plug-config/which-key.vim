@@ -30,7 +30,5 @@ let g:my_dict.c = {
 
 let g:my_dict.p = {
       \ 'name' : '+REPL',
-      \ '1' : ['<Plug>RStart'        , 'Start R REPL']        ,
-      \ '2' : ['<Plug>(ripple_open_repl)'        , 'Start Python REPL']        ,
+      \ '1' : ['<Plug>(ripple_open_repl)'        , 'Start REPL']        ,
       \ }
-
