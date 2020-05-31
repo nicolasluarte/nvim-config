@@ -21,7 +21,7 @@ nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
-:tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
 nmap <space>r :RnvimrToggle<CR>
 nnoremap <space>_ :Commentary<CR>
 vnoremap <space>_ :Commentary<CR>

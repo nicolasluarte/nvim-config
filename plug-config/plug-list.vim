@@ -17,7 +17,7 @@ Plug 'preservim/nerdtree'
 Plug 'Raimondi/delimitMate'
 Plug 'itchyny/lightline.vim'
 let R_assign_map = "--"
-let R_show_args = 1
+" let R_show_args = 1
 autocmd FileType r inoremap <buffer> <C-S-P> <Esc>:normal! a %>%<CR>a 
 " HTML
 Plug 'mattn/emmet-vim'
@@ -40,5 +40,5 @@ Plug 'tpope/vim-commentary'
 Plug 'voldikss/vim-floaterm'
 
 call plug#end()
-
+autocmd FileType r call deoplete#custom#buffer_option('auto_complete', v:false)
 let g:deoplete#enable_at_startup = 1
