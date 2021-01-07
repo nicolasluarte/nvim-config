@@ -1,2 +1,5 @@
+
 # nvim-config
-my personal nvim configuration
+
+- Zotcite for citations
+- COC for autocompletion
