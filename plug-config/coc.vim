@@ -1,4 +1,7 @@
-﻿" TextEdit might fail if hidden is not set.
+﻿" Enable highlight current symbol on cursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" TextEdit might fail if hidden is not set.
 set hidden
 
 " Some servers have issues with backup files, see #649.

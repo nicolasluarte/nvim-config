@@ -5,7 +5,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jalvesaq/zotcite'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'rainglow/vim'
+Plug 'phanviet/vim-monokai-pro'
 
 call plug#end()
 
@@ -21,3 +21,6 @@ source $HOME/.config/nvim/plug-config/presentations.vim
 set clipboard+=unnamedplus
 
 " A E S T H E T I C S
+set termguicolors
+set cursorline
+colorscheme monokai_pro
