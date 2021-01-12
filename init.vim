@@ -1,12 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
-" COC
+" Plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jalvesaq/zotcite'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'tmsvg/pear-tree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 call plug#end()
 
