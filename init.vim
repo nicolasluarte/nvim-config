@@ -6,12 +6,11 @@ Plug 'jalvesaq/zotcite'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'tmsvg/pear-tree'
 
 call plug#end()
 
 " source configurations
-
-" COC
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/limelight.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
