@@ -23,3 +23,4 @@ set clipboard+=unnamedplus
 set termguicolors
 set cursorline
 colorscheme monokai_pro
+set nu
