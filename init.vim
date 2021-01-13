@@ -22,4 +22,5 @@ source $HOME/.config/nvim/plug-config/presentations.vim
 source $HOME/.config/nvim/plug-config/aesthetics.vim
 
 " general configurations
+let mapleader = " "
 set clipboard+=unnamedplus
