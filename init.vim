@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'sophacles/vim-processing'
 
 call plug#end()
 
