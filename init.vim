@@ -74,3 +74,4 @@ let which_key_map.a = {
 			\ 'p' : ['ArduinoChooseProgrammer', 'Choose programmer'],
 			\}
 nnoremap <leader>      :WhichKey! g:which_key_map<CR>
+
