@@ -1,10 +1,9 @@
-call plug#begin('~/.vim/plugged')
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 set clipboard+=unnamedplus
 
+call plug#begin('~/.vim/plugged')
 " Plugins
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jalvesaq/zotcite'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -14,7 +13,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'sophacles/vim-processing'
 Plug 'sbdchd/neoformat'
 Plug 'stevearc/vim-arduino'
 Plug 'vim-airline/vim-airline'
@@ -22,11 +20,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'roman/golden-ratio'
-
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " source configurations
-source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/limelight.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/presentations.vim
