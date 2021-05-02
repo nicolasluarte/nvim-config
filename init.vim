@@ -21,6 +21,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'roman/golden-ratio'
 Plug 'tpope/vim-fugitive'
+Plug 'karoliskoncevicius/vim-sendtowindow'
 call plug#end()
 
 " source configurations
@@ -33,7 +34,7 @@ source $HOME/.config/nvim/plug-config/whichkey.vim
 source $HOME/.config/nvim/plug-config/neoformat.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/nvimr.vim
-
+source $HOME/.config/nvim/plug-config/sendtowindow.vim
 
 " movements
 nnoremap <space>t :CocCommand explorer --preset floating<CR>
