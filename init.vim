@@ -22,6 +22,7 @@ Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'roman/golden-ratio'
 Plug 'tpope/vim-fugitive'
 Plug 'karoliskoncevicius/vim-sendtowindow'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " source configurations
@@ -35,9 +36,10 @@ source $HOME/.config/nvim/plug-config/neoformat.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/nvimr.vim
 source $HOME/.config/nvim/plug-config/sendtowindow.vim
+source $HOME/.config/nvim/plug-config/easymotion.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
 
 " movements
-nnoremap <space>t :CocCommand explorer --preset floating<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
