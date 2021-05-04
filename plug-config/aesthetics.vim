@@ -1,6 +1,6 @@
 set termguicolors
 set cursorline
-colorscheme monokai_pro
+colorscheme dracula
 set relativenumber
 set nu
 set incsearch

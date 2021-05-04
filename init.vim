@@ -23,6 +23,7 @@ Plug 'roman/golden-ratio'
 Plug 'tpope/vim-fugitive'
 Plug 'karoliskoncevicius/vim-sendtowindow'
 Plug 'easymotion/vim-easymotion'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " source configurations
