@@ -2,6 +2,9 @@ let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 set clipboard+=unnamedplus
 
+" for neovide
+set guifont=Fira\ Code:h15
+
 call plug#begin('~/.vim/plugged')
 " Plugins
 Plug 'jalvesaq/zotcite'
